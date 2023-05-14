@@ -4,6 +4,14 @@
 
 All necessary configuration for RaspberryPI, Justboom and spotifyd
 
+## Install and run
+
+```sh
+$ git clone https://github.com/baptooo/raspify.git
+$ cd raspify
+$ sh install.sh
+```
+
 ## Debug the script with docker
 
 **Build and run**
