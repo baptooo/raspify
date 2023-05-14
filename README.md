@@ -7,11 +7,17 @@ All necessary configuration for RaspberryPI, Justboom and spotifyd
 ## Debug the script with docker
 
 **Build and run**
-`docker build -t raspify .`
-`docker run raspify`
+
+```sh
+$ docker build -t raspify .
+$ docker run raspify
+```
 
 **Run it in interactive mode**
-`docker run --it raspify /bin/bash`
+
+```sh
+$ docker run --rm --it raspify /bin/bash
+```
 
 ## Made from official doc of spotifyd service
 
