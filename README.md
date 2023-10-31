@@ -10,6 +10,8 @@ All necessary configuration for RaspberryPI, Justboom and spotifyd
 $ git clone https://github.com/baptooo/raspify.git
 $ cd raspify
 $ sh install.sh
+# $ sh install-spotifyd.sh # Install spotifyd only
+# $ sh install-airplay.sh # Install shairport-sync only
 ```
 
 ## Debug the script with docker
@@ -17,14 +19,14 @@ $ sh install.sh
 **Build and run**
 
 ```sh
-$ docker build -t raspify .
-$ docker run raspify
+$ docker compose build
+$ docker compose up
 ```
 
 **Run it in interactive mode**
 
 ```sh
-$ docker run --rm --it raspify /bin/bash
+$ docker compose run -it raspify sh
 ```
 
 ## Made from official doc of spotifyd service

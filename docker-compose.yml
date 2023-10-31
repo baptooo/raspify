@@ -1,0 +1,13 @@
+version: '3'
+services:
+  raspify:
+    build:
+      context: .
+    command: sh install.sh
+    volumes:
+      - ./install.sh:/app/install.sh
+      - ./install-airplay.sh:/app/install-airplay.sh
+      - ./install-spotifyd.sh:/app/install-spotifyd.sh
+      - ./shairport-sync.conf:/app/shairport-sync.conf
+      - ./spotifyd.conf:/app/spotifyd.conf
+      - ./spotifyd.service:/app/spotifyd.service
